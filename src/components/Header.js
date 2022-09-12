@@ -1,5 +1,7 @@
 import React from 'react'
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+
 
 
 function Header() {
@@ -11,14 +13,18 @@ function Header() {
             <Navbar bg="transparent" className="navbar-dark" expand="lg">
                 <Container>
 
-                    <Navbar.Brand href="#home" className="nav">JVCD</Navbar.Brand>
+                    <Navbar.Brand href="/" className="nav">JVCD</Navbar.Brand>
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                     <Navbar.Collapse id="basic-navbar-nav" className="nav">
                         <Nav className="ms-auto nav">
-                            <Nav.Link href="#home" className="nav">Home</Nav.Link>
-                            <Nav.Link href="#" className="nav">Design</Nav.Link>
+                            <Nav.Link href="/" className="nav">Home</Nav.Link>
+                            <Nav.Link href="#" className="nav">
+                                {/* <Link to={"./screens/design/"}> */}
+                                    Design
+                                {/* </Link> */}
+                            </Nav.Link>
                             <Nav.Link href="#" className="nav">Development</Nav.Link>
                             <Nav.Link href="#" className="nav">Resume</Nav.Link>
                             <Nav.Link href="#" className="nav">Contact</Nav.Link>

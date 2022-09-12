@@ -3,10 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
+import HomeScreen from './screens/HomeScreen'
+import Design from './screens/Design'
 
 function App() {
 
-    const myStyle={
+  const myStyle={
     backgroundImage:
     "url(/images/jvcdesignsbg1.png)"
   }
@@ -18,15 +20,19 @@ function App() {
         <Header />
 
         <main className="py-3 main">
+
             <Container>
-              <h1 className='title'>Jacob Van Cleave Design</h1>
+
+                <HomeScreen />
+
             </Container>
+
         </main>
 
         <Footer />
 
     </div>
-  );
+  )
 }
 
 export default App;
